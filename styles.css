@@ -4,15 +4,13 @@
   --primary-light: #6070ff;
   --primary-dark: #172b4d;
   --secondary-dark: #344563;
-  --secondary-light: #7F8cff;
+  --secondary-light: #7f8cff;
 }
 
 body {
   padding: 0;
   margin: 0;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;   
 }
 
@@ -53,7 +51,6 @@ ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  
 }
 
 .nav-wrapper li {
@@ -88,6 +85,3 @@ ul {
   max-width: 50%;
   justify-content: space-between;
 }
-
-
-
