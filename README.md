@@ -8,9 +8,9 @@
 
 - HTML & CSS
 
-## Live Demo (if available)
+## Preview Image
 
-[Live Demo Link](https://livedemo.com)
+![mobile view](assets/screenshots/mobileView-day3.JPG?raw=true "Title")
 
 ## Authors
 
