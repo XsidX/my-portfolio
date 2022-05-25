@@ -1,42 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-
 :root {
-  --primary-light:#6070FF;
-  --primary-dark: #172B4D;
+  --primary-light: #6070ff;
+  --primary-dark: #172b4d;
   --secondary-dark: #344563;
-  --secondary-light: #7F8CFF;
+  --secondary-light: #7F8cff;
 }
-
 
 body {
   padding: 0;
   margin: 0;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;   
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-p{
+p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--secondary-dark)
+  color: var(--secondary-dark);
 }
-ul{
+
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.main-wrapper{
+
+.main-wrapper {
   height: 100vh;
 }
+
 .container {
   padding: 0 24px;
 }
@@ -45,10 +45,10 @@ ul{
   height: 48px;
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
 }
 
-.nav-wrapper .logo a{
+.nav-wrapper .logo a {
   color: var(--primary-light);
   font-weight: 700;
   font-size: 18px;
@@ -56,11 +56,11 @@ ul{
   
 }
 
-.nav-wrapper li{
+.nav-wrapper li {
   cursor: pointer;
 }
 
-.hero-wrapper{
+.hero-wrapper {
   margin-top: 15%;
   padding-top: 12%;
   height: 100%;
@@ -68,14 +68,14 @@ ul{
   background-repeat: no-repeat;
 }
 
-.hero-wrapper h1{
+.hero-wrapper h1 {
   font-weight: 700;
   font-size: 48px;
   line-height: 52px;
   color: var(--primary-dark);
 }
 
-.hero-wrapper h2{
+.hero-wrapper h2 {
   text-transform: uppercase;
   color: var(--secondary-light);
   font-weight: 500;
@@ -83,7 +83,7 @@ ul{
   line-height: 24px;
 }
 
-.social{
+.social {
   display: flex;
   max-width: 50%;
   justify-content: space-between;
