@@ -46,7 +46,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: solid red 1px;
 }
 
 .logo {
@@ -63,7 +62,6 @@ ul {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  border: 1px solid red
 }
 
 .hero-container {
