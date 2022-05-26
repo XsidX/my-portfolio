@@ -5,6 +5,10 @@
   --primary-dark: #172b4d;
   --secondary-dark: #344563;
   --secondary-light: #7f8cff;
+  --primary-gray: #7a869a;
+  --light-blue: #ebebff;
+  --dark-blue: #396df2;
+
 }
 
 body {
@@ -86,4 +90,87 @@ ul {
 .social {
   display: flex;
   gap: 16px;
+}
+
+.projects-wrapper {
+  display: grid;
+}
+
+.project-container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.project-snapshot {
+  width: 100%;
+  height: 42%;
+  display: block;
+}
+.project-snapshot img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-container h2 {
+  color: var(--primary-dark);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-transform: capitalize;
+}
+
+.project-details {
+  display: flex; 
+  gap: 12px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.project-details .client-name {
+  text-transform: uppercase;
+  color: var(--secondary-dark);
+  
+}
+
+.project-details .role, .yearlb {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--primary-gray);
+}
+
+.project-container p {
+  font-size: 15px;
+}
+
+.technologies-used {
+  display: flex;
+  gap: 8px;
+}
+
+.technologies-used li {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: lowercase;
+  color: var(--primary-light);
+  padding: 4px 12px;
+  background-color: var(--light-blue);
+  border-radius: 8px;
+}
+
+.project-call-to-action {
+  margin-top: 20px;
+  padding: 12px;
+  background: #FFFFFF;
+  border: 1px solid var(--primary-light);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: var(--dark-blue);
+  text-align: center;
 }
