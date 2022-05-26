@@ -8,6 +8,7 @@
   --primary-gray: #7a869a;
   --light-blue: #ebebff;
   --dark-blue: #396df2;
+  --dark: #000000;
 
 }
 
@@ -34,6 +35,41 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px;
+  background: #FFFFFF;
+  border: 1px solid var(--primary-light);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: var(--dark-blue);
+  text-align: center;
+}
+
+.intro-text {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  color: var(--primary-dark);
+}
+
+.call-to-action {
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  padding: 16px 0;
+  text-align: center;
+  color: var(--secondary-light);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  line-height: 24px;
 }
 
 .container {
@@ -70,21 +106,6 @@ ul {
 
 .hero-container {
   padding-top: 100px;
-}
-
-.hero-wrapper h1 {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 52px;
-  color: var(--primary-dark);
-}
-
-.hero-wrapper h2 {
-  text-transform: uppercase;
-  color: var(--secondary-light);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
 }
 
 .social {
@@ -150,6 +171,10 @@ ul {
   gap: 8px;
 }
 
+.about-wrapper {
+  padding-bottom: 100px;
+}
+
 .technologies-used li {
   font-weight: 500;
   font-size: 12px;
@@ -161,16 +186,33 @@ ul {
   border-radius: 8px;
 }
 
-.project-call-to-action {
-  margin-top: 20px;
-  padding: 12px;
-  background: #FFFFFF;
-  border: 1px solid var(--primary-light);
-  border-radius: 8px;
+.tools-title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 24px;
+  color: var(--dark);
   text-transform: capitalize;
-  color: var(--dark-blue);
-  text-align: center;
+}
+
+.b-bottom{
+  border-bottom: #dfe1e6 1px solid;
+}
+
+.lang-list li {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  gap: 16px;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
 }
