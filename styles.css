@@ -76,16 +76,17 @@ ul {
   padding: 0 24px;
 }
 
-.header-wrapper {
+.header-container {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; 
   z-index: 100;
   height: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -96,16 +97,18 @@ ul {
 }
 
 .hero-wrapper {
-  margin-top: 10vh;
   height: 90vh;
-  background-image: url(/assets/svgs/header-shapes\ mobile.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
 }
 
 .hero-container {
-  padding-top: 100px;
+  padding-bottom: 150px;
+  background-image: url(/assets/svgs/header-shapes\ mobile.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.hero-container h1 {
+  padding-top: 140px;
 }
 
 .social {
@@ -172,7 +175,8 @@ ul {
 }
 
 .about-wrapper {
-  padding-bottom: 100px;
+  background-image: url(/assets/svgs/Base\ about\ my\ self.svg);
+  background-size: cover;
 }
 
 .technologies-used li {
@@ -199,7 +203,7 @@ ul {
   text-transform: capitalize;
 }
 
-.b-bottom{
+.b-bottom {
   border-bottom: #dfe1e6 1px solid;
 }
 
