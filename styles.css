@@ -8,8 +8,7 @@
   --primary-gray: #7a869a;
   --light-blue: #ebebff;
   --dark-blue: #396df2;
-  --dark: #000000;
-
+  --dark: #000;
 }
 
 body {
@@ -40,7 +39,7 @@ ul {
 .btn {
   margin-top: 20px;
   padding: 12px;
-  background: #FFFFFF;
+  background: #fff;
   border: 1px solid var(--primary-light);
   border-radius: 8px;
   font-weight: 500;
@@ -80,13 +79,13 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0; 
+  right: 0;
   z-index: 100;
   height: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .logo {
@@ -130,6 +129,7 @@ ul {
   height: 42%;
   display: block;
 }
+
 .project-snapshot img {
   width: 100%;
   height: 100%;
@@ -144,7 +144,7 @@ ul {
 }
 
 .project-details {
-  display: flex; 
+  display: flex;
   gap: 12px;
   font-weight: 600;
   font-size: 13px;
@@ -154,10 +154,10 @@ ul {
 .project-details .client-name {
   text-transform: uppercase;
   color: var(--secondary-dark);
-  
 }
 
-.project-details .role, .yearlb {
+.project-details .role,
+.yearlb {
   text-transform: capitalize;
   display: flex;
   align-items: center;
