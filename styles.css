@@ -16,6 +16,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 p {
@@ -31,38 +32,47 @@ ul {
   margin: 0;
 }
 
-.main-wrapper {
-  height: 100vh;
-}
-
 .container {
   padding: 0 24px;
 }
 
-.nav-wrapper ul {
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   height: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: solid red 1px;
 }
 
-.nav-wrapper .logo a {
+.logo {
   color: var(--primary-light);
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
 }
 
-.nav-wrapper li {
-  cursor: pointer;
-}
-
 .hero-wrapper {
-  margin-top: 15%;
-  padding-top: 12%;
-  height: 100%;
+  margin-top: 10vh;
+  height: 90vh;
   background-image: url(/assets/svgs/header-shapes\ mobile.svg);
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  border: 1px solid red
+}
+
+.hero-background{
+  height: 100%;
+  margin-top: 20%;
+}
+
+.hero-container {
+  padding-top: 100px;
 }
 
 .hero-wrapper h1 {
