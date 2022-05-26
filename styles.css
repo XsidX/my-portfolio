@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  --primary-light: #6070ff;
+  --primary-dark: #172b4d;
+  --secondary-dark: #344563;
+  --secondary-light: #7f8cff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--secondary-dark);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 0 24px;
+}
+
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--primary-light);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.hero-wrapper {
+  margin-top: 10vh;
+  height: 90vh;
+  background-image: url(/assets/svgs/header-shapes\ mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.hero-container {
+  padding-top: 100px;
+}
+
+.hero-wrapper h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  color: var(--primary-dark);
+}
+
+.hero-wrapper h2 {
+  text-transform: uppercase;
+  color: var(--secondary-light);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.social {
+  display: flex;
+  max-width: 50%;
+  justify-content: space-between;
+}
