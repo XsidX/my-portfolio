@@ -254,7 +254,7 @@ ul {
 }
 
 .contact-container {
-  padding-top: 103px;
+  padding: 103px 24px 0 24px;
   background-image: url('assets/svgs/contact-form-shapes-mobile.svg');
   background-size: 65% 99%;
   background-repeat: no-repeat;
