@@ -18,6 +18,7 @@ body {
   margin: 0;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  background-color: #f7f7f9;
 }
 
 h1 {
@@ -79,11 +80,11 @@ ul {
 }
 
 .container {
-  padding: 0 24px;
+  margin: 0 24px;
 }
 
 .section-margin-t {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .header-container {
@@ -93,6 +94,7 @@ ul {
   right: 0;
   z-index: 100;
   height: 48px;
+  padding: 0 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,18 +109,22 @@ ul {
 }
 
 .hero-wrapper {
-  height: 90vh;
+  height: 100vh;
+  background-image: url(assets/svgs/header-background-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-container {
-  padding-bottom: 150px;
-  background-image: url(/assets/svgs/header-shapes\ mobile.svg);
+  height: 100%;
+  padding: 0 24px;
+  background-image: url(assets/svgs/header-shapes\ mobile.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .hero-container h1 {
-  padding-top: 140px;
+  padding-top: 60%;
 }
 
 .social {
@@ -131,8 +137,10 @@ ul {
 }
 
 .project-container {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 16px 25px 16px;
+  background-color: var(--primary-white);
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
 }
 
 .project-snapshot {
@@ -188,7 +196,9 @@ ul {
 }
 
 .about-wrapper {
-  background-image: url(/assets/svgs/Base\ about\ my\ self.svg);
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-image: url(assets/svgs/about-bg.svg);
   background-size: cover;
 }
 
@@ -235,6 +245,7 @@ ul {
 }
 
 .contact-wrapper {
+  margin-top: -100px;
   padding-bottom: 50px;
   background-image: url('assets/svgs/contact-bg.svg');
   background-size: cover;
