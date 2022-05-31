@@ -57,6 +57,12 @@ ul {
   text-transform: capitalize;
   color: var(--dark-blue);
   text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--primary-light);
+  color: var(--primary-white);
 }
 
 .intro-text {
@@ -260,6 +266,12 @@ ul {
   background-position-x: right;
   background-position-y: 15px;
   z-index: -1;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .contact-container .intro-text {
