@@ -187,7 +187,6 @@ ul {
 .project-container p {
   font-size: 20px;
   line-height: 28px;
-  color: ;
 }
 
 .technologies-used {
@@ -263,8 +262,7 @@ ul {
   z-index: -1;
 }
 
-.contact-container .intro-text{
-  
+.contact-container .intro-text {
   text-align: center;
   color: var(--primary-white);
 }
@@ -277,7 +275,8 @@ ul {
   padding-bottom: 30px;
 }
 
-.contact-container input, textarea {
+.contact-container input,
+textarea {
   width: 100%;
   background-color: var(--primary-white);
   margin-bottom: 20px;
@@ -286,7 +285,7 @@ ul {
   color: var(--dark);
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  padding:15px 38px 15px 16px;
+  padding: 15px 38px 15px 16px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -295,7 +294,6 @@ ul {
 .contact-container input {
   font-size: 17px;
   line-height: 20px;
-
 }
 
 .contact-container textarea {
@@ -305,8 +303,5 @@ ul {
 }
 
 .contact-container button {
-  margin-top: 0px;
+  margin-top: 0;
 }
-
-
-
