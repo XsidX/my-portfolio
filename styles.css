@@ -45,7 +45,6 @@ ul {
 }
 
 .btn {
-  margin-top: 20px;
   padding: 12px;
   background: #fff;
   border: 1px solid var(--primary-light);
@@ -91,6 +90,12 @@ ul {
 
 .section-margin-t {
   margin-top: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0 155px;
+  }
 }
 
 .header-container {
@@ -158,7 +163,7 @@ ul {
 
 .hero-wrapper {
   height: 100vh;
-  background-image: url(assets/svgs/header-background-mobile.svg);
+  background-image: url('assets/svgs/header-background-mobile.svg');
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -167,7 +172,7 @@ ul {
 .hero-container {
   height: 100%;
   padding: 0 24px;
-  background-image: url(assets/svgs/header-shapes\ mobile.svg);
+  background-image: url('assets/svgs/header-shapes\ mobile.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -190,7 +195,7 @@ ul {
     left: 0;
     right: 0;
     height: 100%;
-    background-image: url(assets/svgs/header-background-shape-desktop.svg);
+    background-image: url('assets/svgs/header-background-shape-desktop.svg');
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -3;
@@ -202,7 +207,7 @@ ul {
     left: 0;
     right: 0;
     height: calc(100% - 80px);
-    background-image: url(assets/svgs/header-shapes-desktop.svg);
+    background-image: url('assets/svgs/header-shapes-desktop.svg');
     background-repeat: no-repeat;
     background-size:100% 85%;
     z-index: -2;
@@ -239,6 +244,8 @@ ul {
 
 .projects-wrapper {
   display: grid;
+  grid-auto-rows: 1fr;
+  row-gap: 100px;
 }
 
 .project-container {
@@ -252,6 +259,23 @@ ul {
   width: 100%;
   height: 42%;
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .project-container {
+    display: flex;
+    gap: 46px;
+    padding: 16px;
+  }
+
+  .project-snapshot {
+    height: 100%;
+  }
+
+  .project-container .even {
+    order: 999;
+  }
+
 }
 
 .project-snapshot img {
@@ -276,7 +300,6 @@ ul {
 }
 
 .project-details .client-name {
-  text-transform: uppercase;
   color: var(--secondary-dark);
 }
 
@@ -289,21 +312,13 @@ ul {
   color: var(--primary-gray);
 }
 
-.project-container p {
-  font-size: 20px;
-  line-height: 28px;
+.project-container .btn {
+  margin-top: 40px;
 }
 
 .technologies-used {
   display: flex;
   gap: 8px;
-}
-
-.about-wrapper {
-  padding-top: 100px;
-  padding-bottom: 200px;
-  background-image: url(assets/svgs/about-bg.svg);
-  background-size: cover;
 }
 
 .technologies-used li {
@@ -317,6 +332,29 @@ ul {
   border-radius: 8px;
 }
 
+.about-wrapper {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-image: url(assets/svgs/about-bg.svg);
+  background-size: cover;
+}
+
+.about-container .btn {
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 40px;
+  }
+
+  .about-wrapper {
+    background-image: url('assets/svgs/about-bg-desktop.svg');
+  }
+}
+
 .tools-title {
   display: flex;
   justify-content: space-between;
@@ -328,6 +366,12 @@ ul {
   line-height: 24px;
   color: var(--dark);
   text-transform: capitalize;
+}
+
+@media screen and (min-width: 768px) {
+  .tools-title .title {
+    padding-left: 16px;
+  }
 }
 
 .b-bottom {
@@ -348,13 +392,27 @@ ul {
   color: #253858;
 }
 
+@media screen and (min-width: 768px) {
+  .lang-list {
+    display: flex;
+    gap: 12px;
+    max-width: 70%;
+  }
+  .lang-list li {
+    flex: 1 1 0px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+}
+
 .contact-wrapper {
   margin-top: -100px;
   padding-bottom: 50px;
   background-image: url('assets/svgs/contact-bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -2;
+  z-index: -4;
 }
 
 .contact-container {
@@ -364,13 +422,35 @@ ul {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 15px;
-  z-index: -1;
+  z-index: -2;
+}
+
+@media screen and (min-width: 576px) {
+  .contact-wrapper {
+    padding-bottom: 0;
+    background-image: url('assets/svgs/contact-bg-desktop.svg');
+  }
+
+  .contact-container {
+    padding: 10% 30% 10% 30%;
+    background-image: url('assets/svgs/contact-shapes-desktop.svg');
+    background-size: 100% 100%;
+    background-position-x: 0px;
+    background-position-y: 15px;
+    margin: 0 40px;
+  }
 }
 
 .contact-container form {
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-container form {
+    align-items: center;
+  }
 }
 
 .contact-container .intro-text {
