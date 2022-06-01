@@ -92,9 +92,21 @@ ul {
   margin-top: 100px;
 }
 
+@media screen and (min-width: 576px) {
+  .container {
+    margin: 0 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
-    margin: 0 155px;
+    margin: 0 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    margin: 0 120px;
   }
 }
 
@@ -104,7 +116,7 @@ ul {
   left: 0;
   right: 0;
   z-index: 100;
-  height: 50px;
+  height: 48px;
   padding: 0 24px;
   display: flex;
   justify-content: space-between;
@@ -115,12 +127,19 @@ ul {
 @media screen and (min-width: 576px) {
   .header-container {
     padding: 0 60px;
+    height: 72px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .header-container {
-    padding: 0 155px;
+    padding: 0 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    padding: 0 120px;
   }
 }
 
@@ -178,6 +197,12 @@ ul {
 }
 
 @media screen and (min-width: 576px) {
+  .hero-container {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .hero-wrapper {
     position: relative;
     display: flex;
@@ -187,6 +212,7 @@ ul {
 
   .hero-container {
     background-image: none;
+    padding: 0;
   }
 
   .hero-wrapper-bg {
@@ -219,13 +245,22 @@ ul {
   padding-top: 60%;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 540px) {
+  .hero-container {
+    background-position-y: 100px;
+  }
   .hero-container h1 {
-    padding-top: 0;
+    padding-top: 50%;
   }
 
   .hero-container h1 .break {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container h1 {
+    padding-top: 0;
   }
 
   .hero-container {
@@ -244,7 +279,6 @@ ul {
 
 .projects-wrapper {
   display: grid;
-  grid-auto-rows: 1fr;
   row-gap: 100px;
 }
 
@@ -262,10 +296,16 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
+  .projects-wrapper {
+    grid-auto-rows: 1fr;
+  }
+
   .project-container {
     display: flex;
     gap: 46px;
     padding: 16px;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   }
 
   .project-snapshot {
@@ -426,18 +466,30 @@ ul {
 }
 
 @media screen and (min-width: 576px) {
+  .contact-container {
+    margin: 0 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .contact-wrapper {
     padding-bottom: 0;
     background-image: url('assets/svgs/contact-bg-desktop.svg');
   }
 
   .contact-container {
-    padding: 10% 30% 10% 30%;
+    padding: 10% 20% 10% 20% ;
     background-image: url('assets/svgs/contact-shapes-desktop.svg');
     background-size: 100% 100%;
     background-position-x: 0px;
     background-position-y: 15px;
     margin: 0 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-container {
+    padding: 10% 30% 10% 30%;
   }
 }
 
