@@ -234,10 +234,9 @@ ul {
     height: calc(100% - 80px);
     background-image: url('assets/svgs/header-shapes-desktop.svg');
     background-repeat: no-repeat;
-    background-size:100% 85%;
+    background-size: 100% 85%;
     z-index: -2;
   }
-
 }
 
 .hero-container h1 {
@@ -248,6 +247,7 @@ ul {
   .hero-container {
     background-position-y: 100px;
   }
+
   .hero-container h1 {
     padding-top: 50%;
   }
@@ -291,8 +291,9 @@ ul {
 .project-container:hover {
   cursor: pointer;
   border: 2px solid #a7aeff;
-  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
-  drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter:
+    drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 }
 
 .project-snapshot {
@@ -319,7 +320,6 @@ ul {
   .project-container .even {
     order: 999;
   }
-
 }
 
 .project-snapshot img {
@@ -442,8 +442,9 @@ ul {
     gap: 12px;
     max-width: 70%;
   }
+
   .lang-list li {
-    flex: 1 1 0px;
+    flex: 1 1 0;
     flex-direction: column;
     align-items: start;
     justify-content: start;
@@ -482,10 +483,10 @@ ul {
   }
 
   .contact-container {
-    padding: 10% 20% 10% 20% ;
+    padding: 10% 20% 10% 20%;
     background-image: url('assets/svgs/contact-shapes-desktop.svg');
     background-size: 100% 100%;
-    background-position-x: 0px;
+    background-position-x: 0;
     background-position-y: 15px;
     margin: 0 40px;
   }
