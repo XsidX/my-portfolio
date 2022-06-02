@@ -303,10 +303,6 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  .projects-wrapper {
-    grid-auto-rows: 1fr;
-  }
-
   .project-container {
     display: flex;
     gap: 46px;
@@ -314,7 +310,12 @@ ul {
   }
 
   .project-snapshot {
-    height: 100%;
+    height: 60vh;
+    flex: 1 1 100%;
+  }
+
+  .project-content {
+    flex: 1 1 100%;
   }
 
   .project-container .even {
