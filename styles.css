@@ -60,6 +60,9 @@ ul {
   color: var(--dark-blue);
   text-align: center;
   cursor: pointer;
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 400ms;
 }
 
 .btn:hover {
@@ -161,7 +164,14 @@ ul {
 .nav-link a {
   color: var(--secondary-dark);
   padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 150ms ease-in-out;
 }
+
+.nav-link a:hover {
+  background-color: #f7f7f9;
+}
+
 
 .menu {
   cursor: pointer;
