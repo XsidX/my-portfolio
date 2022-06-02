@@ -189,6 +189,7 @@ ul {
   background-image: url('assets/svgs/header-background-mobile.svg');
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .hero-container {
@@ -227,6 +228,7 @@ ul {
     background-image: url('assets/svgs/header-background-shape-desktop.svg');
     background-size: cover;
     background-repeat: no-repeat;
+    border-bottom-left-radius: 100px;
     z-index: -3;
   }
 
