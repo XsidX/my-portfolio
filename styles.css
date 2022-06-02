@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --primary-white: #fff;
@@ -46,7 +49,7 @@ ul {
 
 .btn {
   padding: 12px;
-  background: #fff;
+  background-color: #fff;
   border: 1px solid var(--primary-light);
   border-radius: 8px;
   font-weight: 500;
@@ -60,7 +63,7 @@ ul {
 }
 
 .btn:hover {
-  background: var(--primary-light);
+  background-color: var(--primary-light);
   color: var(--primary-white);
 }
 
@@ -157,6 +160,7 @@ ul {
 
 .nav-link a {
   color: var(--secondary-dark);
+  padding: 5px 10px;
 }
 
 .menu {
@@ -286,20 +290,19 @@ ul {
   background-color: var(--primary-white);
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-}
-
-.project-container:hover {
-  cursor: pointer;
-  border: 2px solid #a7aeff;
-  filter:
-    drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
-    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 }
 
 .project-snapshot {
   width: 100%;
   height: 42%;
   display: block;
+  filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
+  transition: filter 250ms ease-in-out;
+}
+
+.project-snapshot:hover {
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
 }
 
 @media screen and (min-width: 768px) {
@@ -503,6 +506,8 @@ form {
   display: flex;
   flex-direction: column;
   align-items: start;
+  filter:
+    drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 }
 
 @media screen and (min-width: 768px) {
@@ -552,5 +557,11 @@ textarea {
 }
 
 .contact-container button {
-  margin-top: 0;
+  margin-top: 3px;
+  filter:drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  transition: all 300ms ease-in-out;
+}
+
+.contact-container button:hover {
+  transform: translateY(-3px);
 }
