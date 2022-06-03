@@ -182,6 +182,33 @@ ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo span {
+  display: block;
+  background-color: var(--secondary-light);
+  height: 10px;
+  width: 20px;
+  border-radius: 0 0 15px 15px;
+  transition: all 150ms ease-in-out;
+  animation: spin 1s ease-in-out;  
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo:hover span {
+  background-color: var(--primary-gray);
 }
 
 @media screen and (min-width: 768px) {
