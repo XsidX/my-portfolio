@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -172,7 +173,6 @@ ul {
   background-color: #f7f7f9;
 }
 
-
 .menu {
   cursor: pointer;
 }
@@ -194,7 +194,7 @@ ul {
   width: 20px;
   border-radius: 0 0 15px 15px;
   transition: all 150ms ease-in-out;
-  animation: spin 1s ease-in-out;  
+  animation: spin 1s ease-in-out;
 }
 
 @keyframes spin {
@@ -545,8 +545,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: start;
-  filter:
-    drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 }
 
 @media screen and (min-width: 768px) {
@@ -597,7 +596,7 @@ textarea {
 
 .contact-container button {
   margin-top: 3px;
-  filter:drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   transition: all 300ms ease-in-out;
 }
 
