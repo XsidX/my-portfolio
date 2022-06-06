@@ -8,6 +8,10 @@
 
 - HTML & CSS
 
+## Live Demo
+
+[Live Demo Link](https://xsidx.github.io/my-portfolio/)
+
 ## Preview Image
 
 ![mobile view](assets/screenshots/mobileView-day3.JPG?raw=true "Title")
