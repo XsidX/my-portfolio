@@ -91,6 +91,43 @@ ul {
   line-height: 24px;
 }
 
+.main-container {
+  position: relative;
+}
+
+#menu-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: var(--primary-light);
+  opacity: .9;
+  z-index: 100;
+}
+
+.menu-layer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: var(--secondary-white);
+}
+
+.menu-layer button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: transparent;
+  border: none;
+}
+
+.menu-layer ul{
+  margin-top: 100px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 .container {
   margin: 0 24px;
 }
