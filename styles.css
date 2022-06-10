@@ -95,6 +95,10 @@ ul {
   position: relative;
 }
 
+.display-none {
+  display: none;
+}
+
 #menu-wrapper {
   position: absolute;
   top: 0;
