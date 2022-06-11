@@ -92,10 +92,11 @@ ul {
   line-height: 24px;
 }
 
-/* .no-scroll {
+.no-scroll {
   overflow-y: hidden;
   height: 100vh;
-} */
+  margin: 0;
+}
 
 .display-none {
   display: none;
