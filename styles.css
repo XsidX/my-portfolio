@@ -462,13 +462,16 @@ ul {
   top: 0;
   left: 0;
   right: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 90;
   background: rgba(200, 203, 233, 0.2);
   backdrop-filter: blur(5px);
+}
+
+.popup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .popup-container {
