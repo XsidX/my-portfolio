@@ -478,6 +478,13 @@ ul {
   margin: 16px;
   height: 85%;
   border-radius: 16px;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width:768px) {
+  .popup-container {
+    width: 55%;  
+  }
 }
 
 .popup-container h2 {
@@ -496,7 +503,13 @@ ul {
 }
 
 .popup-snapshot {
-  height: 60%;
+  height: 40%;
+}
+
+@media screen and (min-width:768px) {
+  .popup-snapshot {
+    height: 60%;
+  }
 }
 
 .popup-snapshot img {
@@ -505,15 +518,20 @@ ul {
 }
 
 .popup-content {
-  display: flex;
   margin-top: 16px;
-  gap: 20px;
+}
+
+@media screen and (min-width:992px) {
+  .popup-content {
+    display: flex;
+    gap: 20px;
+  }
 }
 
 .popup-content p {
   margin: 0;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 28px;
   color: var(--secondary-dark);
   width: 95%;
@@ -524,13 +542,41 @@ ul {
   width: 90%;
   border-bottom: 1px solid #EBECF0;
   padding-bottom: 16px;
+  margin-top: 16px;
+  
 }
 
+.popup-content .technologies-used li:nth-child(n+4) {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .popup-content .technologies-used li:nth-child(n+4) {
+      display: block;
+    }
+
+  .popup-content .technologies-used {
+    margin-top: 0;
+  }
+}
+
+.popup-content .btn-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+
 .popup-content .btn {
-  padding: 3px 12px;
+  padding: 5px 12px;
   border-radius: 4px;
-  font-size: 15px;
-  margin-right: 5px;  
+  font-size: 15px; 
+}
+
+@media screen and (min-width: 992px) {
+  .popup-content .btn-wrapper {
+    display: flex;
+    gap: 10px;
+  }
 }
 
 .popup-content .btn svg {
