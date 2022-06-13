@@ -814,7 +814,7 @@ textarea {
 
 .button-wrapper .error {
   color: red;
-  background-color: rgb(255,255,255,.3);
+  background-color: rgb(255, 255, 255, 0.3);
   font-size: 11px;
   padding: 2px 10px;
   margin-top: 18px;
