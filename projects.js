@@ -1,52 +1,81 @@
-const projectsSection = document.getElementById('projects-section')
+const projectsSection = document.getElementById('projects-section');
+const headerWrapper = document.querySelector('.header-container');
 const projects = [
   {
     name: 'Tonic',
     jobDescription: {
       company: 'CANOPY',
       role: 'Back End Dev',
-      year: '2015'
+      year: '2015',
     },
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'javascript']
+    description: {
+      featured: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.'
+    },
+    languages: {
+      featured: ['html', 'css', 'javascript'],
+      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+    },
+    thumbnail: '1-tonic',
   },
   {
     name: 'Multi-Post Stories',
     jobDescription: {
       company: 'FACEBOOK',
       role: 'FullStack Dev',
-      year: '2015'
+      year: '2015',
     },
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    languages: ['html', 'css', 'javascript']
+    description: {
+      featured: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.'
+    },
+    languages: {
+      featured: ['html', 'Ruby on rails', 'css', 'javascript'],
+      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+    },
+    thumbnail: '3-multi-post-stories',
   },
   {
     name: 'Facebook 360',
     jobDescription: {
       company: 'FACEBOOK',
       role: 'FullStack Dev',
-      year: '2015'
+      year: '2015',
     },
-    description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    languages: ['html', 'css', 'javascript']
+    description: {
+      featured: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.'
+    },
+    languages: {
+      featured: ['html', 'Ruby on rails', 'css', 'javascript'],
+      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+    },
+    thumbnail: '3-facebook',
   },
   {
-    name: 'Multi-Post Stories',
+    name: 'Uber Navigation',
     jobDescription: {
       company: 'Uber',
       role: 'Lead Developer',
-      year: '2018'
+      year: '2018',
     },
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    languages: ['html', 'css', 'javascript']
-  }
-]
+    description: {
+      featured: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.'
+    },
+    languages: {
+      featured: ['html', 'Ruby on rails', 'css', 'javascript'],
+      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+    },
+    thumbnail: '2-uber-nav',
+  },
+];
 
-for (let i=0; i<projects.length; i++){
-  const projectContainer = document.createElement('div')
-  projectContainer.innerHTML = ` <div class="project-snapshot">
+for (let i = 0; i < projects.length; i += 1) {
+  const projectContainer = document.createElement('div');
+  projectContainer.innerHTML = ` <div class="project-snapshot ${i % 2 !== 0 ? 'odd' : ''}">
     <a href="">
-      <img src="assets/img/projects/1-tonic.png" alt="tonic" />
+      <img src="assets/img/projects/${projects[i].thumbnail}.png" alt="tonic" />
     </a>
   </div>
   <div class="project-content">
@@ -66,25 +95,25 @@ for (let i=0; i<projects.length; i++){
         ${projects[i].jobDescription.year}
       </li>
     </ul>
-    <p>${projects[i].description}</p>
+    <p>${projects[i].description.featured}</p>
     <ul class="technologies-used">
-      <li>${projects[i].languages[0]}</li>
-      <li>${projects[i].languages[1]}</li>
-      <li>${projects[i].languages[2]}</li>
+      <li>${projects[i].languages.featured[0]}</li>
+      <li>${projects[i].languages.featured[1]}</li>
+      <li>${projects[i].languages.featured[2]}</li>
     </ul>
     <button type="button" class="btn">
       see project
     </button>
   </div> `;
-  projectContainer.classList.add('project-container', 'container')
+  projectContainer.classList.add('project-container', 'container');
   projectsSection.appendChild(projectContainer);
 }
 
 const projectButton = document.querySelectorAll('.project-content .btn');
 
-function createPopup(button, position) {
-  const popup = document.createElement('section')
-  popup.innerHTML =` <div class="popup-wrapper">
+function createPopup(position) {
+  const popup = document.createElement('section');
+  popup.innerHTML = ` <div class="popup-wrapper">
   <div class="popup-container">
     <h2>${projects[position].name}</h2>
     <ul class="project-details">
@@ -99,7 +128,7 @@ function createPopup(button, position) {
         <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="4" cy="4" r="4" fill="#C1C7D0" />
         </svg>
-        2015
+        ${projects[position].jobDescription.year}
       </li>
     </ul>
     <div class=" popup-close">
@@ -111,22 +140,19 @@ function createPopup(button, position) {
     </div>
     <div class="popup-snapshot">
       <a href="">
-        <img src="assets/img//projects/3-facebook.png" alt="tonic-2" />
+        <img src="assets/img//projects/${projects[position].thumbnail}.png" alt="tonic-2" />
       </a>
     </div>
     <div class="popup-content">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-      dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the
-      releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      </p>
+      <p>${projects[position].description.detailed}</p>
       <div>
         <ul class="technologies-used">
-          <li>html</li>
-          <li>css</li>
-          <li>javascript</li>
-          <li>github</li>
-          <li>ruby</li>
-          <li>Bootstrap</li>
+          <li>${projects[position].languages.detailed[0]}</li>
+          <li>${projects[position].languages.detailed[1]}</li>
+          <li>${projects[position].languages.detailed[2]}</li>
+          <li>${projects[position].languages.detailed[3]}</li>
+          <li>${projects[position].languages.detailed[4]}</li>
+          <li>${projects[position].languages.detailed[5]}</li>
         </ul>
         <div class="btn-wrapper">
           <button type="button" class="btn">
@@ -149,21 +175,23 @@ function createPopup(button, position) {
       </div>
     </div>
   </div>
-  </div> `
-  popup.id = 'project-popup'
-  document.body.appendChild(popup)
-  header.classList.toggle('display-none');
-  header.classList.toggle('position-fixed');
+  </div> `;
+  popup.id = 'project-popup';
+  projectsSection.appendChild(popup);
+  headerWrapper.classList.toggle('display-none');
+  headerWrapper.classList.toggle('position-fixed');
+  document.body.classList.toggle('no-scroll');
 }
 
 projectButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    createPopup(btn, index)
-    let popupHTML= document.getElementById('project-popup')
-    let closeButton =  document.querySelector('.popup-close').addEventListener('click', () => {
-      document.body.removeChild(popupHTML)
-      header.classList.toggle('display-none');
-      header.classList.toggle('position-fixed');
-    })
-  })
-}); 
+    createPopup(index);
+    const popupHTML = document.getElementById('project-popup');
+    document.querySelector('.popup-close').addEventListener('click', () => {
+      projectsSection.removeChild(popupHTML);
+      headerWrapper.classList.toggle('display-none');
+      headerWrapper.classList.toggle('position-fixed');
+      document.body.classList.toggle('no-scroll');
+    });
+  });
+});
