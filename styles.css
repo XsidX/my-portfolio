@@ -115,7 +115,6 @@ ul {
   z-index: 100;
   background: rgba(6, 29, 243, 0.6);
   backdrop-filter: blur(5px);
-  z-index: 100;
 }
 
 .menu-layer {
@@ -137,7 +136,7 @@ ul {
   cursor: pointer;
 }
 
-.menu-layer ul{
+.menu-layer ul {
   margin-top: 100px;
   font-weight: 600;
   font-size: 32px;
