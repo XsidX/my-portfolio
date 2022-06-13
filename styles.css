@@ -131,7 +131,7 @@ ul {
 .menu-layer button {
   position: absolute;
   top: 16px;
-  right: 14px;
+  right: 0;
   background: transparent;
   border: none;
   cursor: pointer;
