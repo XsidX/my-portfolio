@@ -62,14 +62,16 @@ ul {
   color: var(--dark-blue);
   text-align: center;
   cursor: pointer;
-  transition-property: color, background-color;
+  transition-property: color, background-color, filter, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 400ms;
+  transition-duration: 300ms;
 }
 
 .btn:hover {
   background-color: var(--primary-light);
   color: var(--primary-white);
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  transform: translateY(-3px);
 }
 
 .intro-text {
@@ -94,7 +96,7 @@ ul {
 
 .no-scroll {
   overflow-y: hidden;
-  height: 100vh;
+  height: 100%;
   margin: 0;
 }
 
@@ -411,7 +413,7 @@ ul {
     flex: 1 1 100%;
   }
 
-  .project-container .even {
+  .project-container .odd {
     order: 999;
   }
 }
@@ -470,6 +472,172 @@ ul {
   border-radius: 8px;
 }
 
+.lang-list li {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  gap: 16px;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+@media screen and (min-width: 768px) {
+  .lang-list {
+    display: flex;
+    gap: 12px;
+    max-width: 70%;
+  }
+
+  .lang-list li {
+    flex: 1 1 0;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+}
+
+#project-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  background: rgba(200, 203, 233, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.popup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.popup-container {
+  position: relative;
+  padding: 16px;
+  background-color: var(--primary-white);
+  margin: 16px;
+  height: 85%;
+  border-radius: 16px;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 768px) {
+  .popup-container {
+    width: 55%;
+  }
+}
+
+.popup-container h2 {
+  margin: 0 0 3px 0;
+}
+
+.popup-container ul {
+  margin-bottom: 16px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.popup-snapshot {
+  height: 40%;
+}
+
+@media screen and (min-width: 768px) {
+  .popup-snapshot {
+    height: 75%;
+  }
+}
+
+.popup-snapshot img {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-content {
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  .popup-content {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.popup-content p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--secondary-dark);
+  width: 95%;
+}
+
+.popup-content .technologies-used {
+  flex-wrap: wrap;
+  width: 90%;
+  border-bottom: 1px solid #ebecf0;
+  padding-bottom: 16px;
+  margin-top: 16px;
+}
+
+.popup-content .technologies-used li:nth-child(n+4) {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .popup-content .technologies-used li:nth-child(n+4) {
+    display: block;
+  }
+
+  .popup-content .technologies-used {
+    margin-top: 0;
+  }
+}
+
+.popup-content .btn-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.popup-content .btn {
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 992px) {
+  .popup-content .btn-wrapper {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.popup-content .btn svg {
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+}
+
+.popup-content .btn svg path {
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 300ms;
+}
+
+.popup-content .btn:hover svg path {
+  fill: var(--primary-white);
+}
+
 .about-wrapper {
   padding-top: 100px;
   padding-bottom: 200px;
@@ -514,35 +682,6 @@ ul {
 
 .b-bottom {
   border-bottom: #dfe1e6 1px solid;
-}
-
-.lang-list li {
-  display: flex;
-  align-items: center;
-  padding: 9px;
-  gap: 16px;
-  background-color: #f7f7f9;
-  border-radius: 8px;
-  margin: 10px 0;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #253858;
-}
-
-@media screen and (min-width: 768px) {
-  .lang-list {
-    display: flex;
-    gap: 12px;
-    max-width: 70%;
-  }
-
-  .lang-list li {
-    flex: 1 1 0;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-  }
 }
 
 .contact-wrapper {
