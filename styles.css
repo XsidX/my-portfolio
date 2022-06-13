@@ -800,12 +800,31 @@ textarea {
   transform: translateY(-3px);
 }
 
-.error {
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .button-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.button-wrapper .error {
   color: red;
-  background-color: purple;
-  font-size: 50px;
-  padding: 10px 50px 90px 30px;
-  margin-top: 90px;
-  border-radius: 50px;
-  border: 5px orange dotted;
+  background-color: rgb(255,255,255,.3);
+  font-size: 11px;
+  padding: 2px 10px;
+  margin-top: 18px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-wrapper .error {
+    margin-top: 16px;
+    margin-left: 16px;
+    font-size: 12px;
+  }
 }
