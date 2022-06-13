@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
   <script src="projects.js" defer></script>
+  <script src="form.js" defer></script>
   <title>Sid's Portfolio</title>
 </head>
 <body>
@@ -240,11 +241,13 @@
           a feature that you need built or a project that needs
           coding. I’d love to help with it
         </p>
-      <form action="https://formspree.io/f/mgedddej" method="post">
+      <form id="form" action="https://formspree.io/f/mgedddej" method="post">
         <input name="Name" id="text" type="text" placeholder="Your name" maxlength="30" required>
         <input name="Email" id="email" type="email" placeholder="Your email address" required>
         <textarea name="comment" placeholder="Write your message here" maxlength="500" required></textarea>
-        <button type="submit" value="Submit" class="btn">Get In Touch</button>
+        <div class="button-wrapper"">
+          <button type="submit" value="Submit" class="btn">Get In Touch</button>
+        </div>
       </form>
       </div>
     </footer>
