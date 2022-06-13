@@ -10,7 +10,7 @@ const projects = [
     },
     description: {
       featured: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.'
+      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     },
     languages: {
       featured: ['html', 'css', 'javascript'],
@@ -27,7 +27,7 @@ const projects = [
     },
     description: {
       featured: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.'
+      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     },
     languages: {
       featured: ['html', 'Ruby on rails', 'css', 'javascript'],
@@ -44,7 +44,7 @@ const projects = [
     },
     description: {
       featured: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.'
+      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     },
     languages: {
       featured: ['html', 'Ruby on rails', 'css', 'javascript'],
@@ -61,7 +61,7 @@ const projects = [
     },
     description: {
       featured: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.'
+      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     },
     languages: {
       featured: ['html', 'Ruby on rails', 'css', 'javascript'],
