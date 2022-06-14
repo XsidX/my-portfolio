@@ -19,33 +19,24 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
-const formInput = {
-  name: document.getElementById('name').value,
-  email: document.getElementById('email').value,
-  message: document.getElementById('message').value,
-}
 
+let localData= JSON.parse(localStorage.getItem('userInput'))
 const isInputChange = (input) => {
   input.addEventListener('change', (e) => {
+    const formInput = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value,
+    }
     formInput[input.name] = e.target.value;
     localStorage.setItem('userInput', JSON.stringify(formInput));
+    localData= JSON.parse(localStorage.getItem('userInput'))
   })
 }
 
-const localData = JSON.parse(localStorage.getItem('userInput'));
-isInputChange(nameInput);
-isInputChange(emailInput);
-isInputChange(messageInput);
-
-// const isEmpty = () => {
-// for( let key in localData) {
-//   if(localData[key].length>0) {
-
-//   }
-// }
-// }
-console.log(localData)
-nameInput.value = localData['name']
-emailInput.value = localData['email']
-messageInput.value = localData['message']
-
+nameInput.value= localData['name']
+emailInput.value= localData['email']
+messageInput.value= localData['message']
+isInputChange(nameInput)
+isInputChange(emailInput)
+isInputChange(messageInput)
