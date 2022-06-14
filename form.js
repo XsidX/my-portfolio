@@ -25,14 +25,22 @@ const formInput = {
   message: document.getElementById('message').value,
 }
 
-localStorage.setItem(JSON.stringify(formInput));
-
 const isInputChange = (input) => {
   input.addEventListener('change', (e) => {
-    formInput[input] = e.target.value;
-    console.log('works')
+    formInput[input.name] = e.target.value;
+    localStorage.setItem('userInput', JSON.stringify(formInput));
+    console.log(JSON.parse(localStorage.getItem('userInput'))[input.name])
+    
   })
 }
 
+const isInputEmpty = (input) => {
+
+  if (JSON.parse(localStorage.getItem('userInput').hasOwnProperty(input.name))) {
+
+  }
+}
+
+
+JSON.parse(localStorage.getItem('userInput'))
 isInputChange(nameInput)
-console.log(formInput)
