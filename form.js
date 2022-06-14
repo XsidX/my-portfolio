@@ -29,18 +29,23 @@ const isInputChange = (input) => {
   input.addEventListener('change', (e) => {
     formInput[input.name] = e.target.value;
     localStorage.setItem('userInput', JSON.stringify(formInput));
-    console.log(JSON.parse(localStorage.getItem('userInput'))[input.name])
-    
   })
 }
 
-const isInputEmpty = (input) => {
+const localData = JSON.parse(localStorage.getItem('userInput'));
+isInputChange(nameInput);
+isInputChange(emailInput);
+isInputChange(messageInput);
 
-  if (JSON.parse(localStorage.getItem('userInput').hasOwnProperty(input.name))) {
+// const isEmpty = () => {
+// for( let key in localData) {
+//   if(localData[key].length>0) {
 
-  }
-}
+//   }
+// }
+// }
+console.log(localData)
+nameInput.value = localData['name']
+emailInput.value = localData['email']
+messageInput.value = localData['message']
 
-
-JSON.parse(localStorage.getItem('userInput'))
-isInputChange(nameInput)
