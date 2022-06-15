@@ -40,9 +40,12 @@ const isInputChange = (input) => {
   });
 };
 
-nameInput.value = localData.name;
-emailInput.value = localData.email;
-messageInput.value = localData.message;
 isInputChange(nameInput);
 isInputChange(emailInput);
 isInputChange(messageInput);
+
+if (localData !== null) {
+  nameInput.value = localData.name;
+  emailInput.value = localData.email;
+  messageInput.value = localData.message;
+}
