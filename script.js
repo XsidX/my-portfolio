@@ -17,6 +17,7 @@ function toggleMobileMenu(element) {
 
 toggleMobileMenu(hamburgerMenu);
 toggleMobileMenu(menuClose);
+console.log(toggleMobileMenu);
 
 menuLinks.forEach((link) => {
   toggleMobileMenu(link);
