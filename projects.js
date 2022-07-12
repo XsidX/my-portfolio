@@ -2,42 +2,50 @@ const projectsSection = document.getElementById('projects-section');
 const headerWrapper = document.querySelector('.header-container');
 const projects = [
   {
-    name: 'Tonic',
+    name: 'Xbox & Bethesda Games Showcase',
     jobDescription: {
-      company: 'CANOPY',
-      role: 'Back End Dev',
-      year: '2015',
+      company: 'Microverse',
+      role: 'Front-End Developer',
+      year: '2022',
     },
     description: {
-      featured: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      featured: 'An online website for the Xbox and Bethesda games 2022 showcase.',
+      detailed:
+        'A website for the Xbox and Bethesda games 2022 showcase. It features a program section, a gallery of games, a partner section and an About page. The gallery of games is rendered dynamically using javascript.',
     },
     languages: {
       featured: ['html', 'css', 'javascript'],
-      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+      detailed: ['html', 'css', 'javascript', 'github'],
     },
-    thumbnail: '1-tonic',
-    liveUrl: 'https://xsidx.github.io/my-portfolio/',
-    sourceCode: 'https://github.com/XsidX/my-portfolio',
+    thumbnail: {
+      featured: 'xbox-showcase.jpg',
+      detailed: 'xbox-showcase-large.jpg',
+    },
+    liveUrl: 'https://xsidx.github.io/xbox-bethesda-games-showcase/',
+    sourceCode: 'https://github.com/XsidX/xbox-bethesda-games-showcase',
   },
   {
-    name: 'Multi-Post Stories',
+    name: 'Todo List',
     jobDescription: {
-      company: 'FACEBOOK',
-      role: 'FullStack Dev',
-      year: '2015',
+      company: 'Microverse',
+      role: 'Front-End Developer',
+      year: '2022',
     },
     description: {
-      featured: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      featured: 'Add, remove, and edit tasks on your personalized todo list.',
+      detailed:
+        'This is a simple todo list app. It features a list of tasks, a form to add new and edit existing tasks, checking and unchecking completed tasks and deleting completed tasks from the list. The tasks are stored in local storage and can be accessed by any browser on the same computer.',
     },
     languages: {
-      featured: ['html', 'Ruby on rails', 'css', 'javascript'],
-      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+      featured: ['html', 'css', 'javascript'],
+      detailed: ['html', 'css', 'javascript', 'webpack', 'github'],
     },
-    thumbnail: '3-multi-post-stories',
-    liveUrl: 'https://xsidx.github.io/my-portfolio/',
-    sourceCode: 'https://github.com/XsidX/my-portfolio',
+    thumbnail: {
+      featured: 'todo-list.jpg',
+      detailed: 'todo-large.jpg',
+    },
+    liveUrl: 'https://xsidx.github.io/todo-list-with-webpack/',
+    sourceCode: 'https://github.com/XsidX/todo-list-with-webpack',
   },
   {
     name: 'Facebook 360',
@@ -47,14 +55,19 @@ const projects = [
       year: '2015',
     },
     description: {
-      featured: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      featured:
+        "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+      detailed:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     languages: {
       featured: ['html', 'Ruby on rails', 'css', 'javascript'],
       detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
     },
-    thumbnail: '3-facebook',
+    thumbnail: {
+      featured: '3-facebook.png',
+      detailed: '3-facebook.png',
+    },
     liveUrl: 'https://xsidx.github.io/my-portfolio/',
     sourceCode: 'https://github.com/XsidX/my-portfolio',
   },
@@ -66,14 +79,19 @@ const projects = [
       year: '2018',
     },
     description: {
-      featured: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-      detailed: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      featured:
+        'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      detailed:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     languages: {
       featured: ['html', 'Ruby on rails', 'css', 'javascript'],
       detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
     },
-    thumbnail: '2-uber-nav',
+    thumbnail: {
+      featured: '2-uber-nav.png',
+      detailed: '2-uber-nav.png',
+    },
     liveUrl: 'https://xsidx.github.io/my-portfolio/',
     sourceCode: 'https://github.com/XsidX/my-portfolio',
   },
@@ -83,7 +101,7 @@ for (let i = 0; i < projects.length; i += 1) {
   const projectContainer = document.createElement('div');
   projectContainer.innerHTML = ` <div class="project-snapshot ${i % 2 !== 0 ? 'odd' : ''}">
     <a href="">
-      <img src="assets/img/projects/${projects[i].thumbnail}.png" alt="tonic" />
+      <img src="assets/img/projects/${projects[i].thumbnail.featured}" alt="tonic" />
     </a>
   </div>
   <div class="project-content">
@@ -105,9 +123,7 @@ for (let i = 0; i < projects.length; i += 1) {
     </ul>
     <p>${projects[i].description.featured}</p>
     <ul class="technologies-used">
-      <li>${projects[i].languages.featured[0]}</li>
-      <li>${projects[i].languages.featured[1]}</li>
-      <li>${projects[i].languages.featured[2]}</li>
+      ${projects[i].languages.featured.map((language) => `<li>${language}</li>`).join('')}
     </ul>
     <button type="button" class="btn">
       see project
@@ -148,19 +164,14 @@ function createPopup(position) {
     </div>
     <div class="popup-snapshot">
       <a href="">
-        <img src="assets/img//projects/${projects[position].thumbnail}.png" alt="tonic-2" />
+        <img src=assets/img//projects/${projects[position].thumbnail.detailed} alt="tonic-2" />
       </a>
     </div>
     <div class="popup-content">
       <p>${projects[position].description.detailed}</p>
       <div>
         <ul class="technologies-used">
-          <li>${projects[position].languages.detailed[0]}</li>
-          <li>${projects[position].languages.detailed[1]}</li>
-          <li>${projects[position].languages.detailed[2]}</li>
-          <li>${projects[position].languages.detailed[3]}</li>
-          <li>${projects[position].languages.detailed[4]}</li>
-          <li>${projects[position].languages.detailed[5]}</li>
+          ${projects[position].languages.detailed.map((language) => `<li>${language}</li>`).join('')}
         </ul>
         <div class="btn-wrapper">
           <a href = "${projects[position].liveUrl}" target="_blank">
